@@ -7,17 +7,20 @@
 
 /* === VARIABLES CSS === */
 :root {
-  --color-primario: #2C1654;
-  --color-acento: #E8612A;
-  --color-dorado: #C9A84C;
-  --color-claro: #FDF6EC;
-  --color-gris: #6B6B6B;
-  --color-texto: #1A1A2E;
-  --fuente-titulo: 'Playfair Display', serif;
-  --fuente-cuerpo: 'DM Sans', sans-serif;
-  --sombra: 0 4px 24px rgba(44, 22, 84, 0.12);
-  --radio: 12px;
+--color-primario: #0f172a;   /* azul oscuro moderno */
+--color-acento: #22c55e;     /* verde vivo */
+--color-dorado: #f59e0b;     /* dorado más cálido */
+--color-claro: #f8fafc;      /* blanco suave */
+--color-gris: #64748b;       /* gris azulado */
+--color-texto: #0b1220;      /* texto más profundo */
+
+--fuente-titulo: 'Playfair Display', serif;
+--fuente-cuerpo: 'DM Sans', sans-serif;
+
+--sombra: 0 6px 24px rgba(15, 23, 42, 0.12);
+--radio: 12px;
 }
+
 
 /* === RESET Y BASE === */
 * {
