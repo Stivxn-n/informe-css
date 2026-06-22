@@ -1,626 +1,652 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Informe de Visita — Conferencia Sara Viloria: El Lenguaje del Color</title>
-
-  <!-- Bootstrap 5.3 CSS (CDN) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- Google Fonts (cargadas también en CSS, este preconnect mejora velocidad) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- CSS propio (SIEMPRE después de Bootstrap para que sobreescriba correctamente) -->
-  <link rel="stylesheet" href="css/estilos.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Informe de Visita — Conferencia Sara Viloria: El Lenguaje del Color</title>
+<!-- Bootstrap 5.3 CSS (CDN) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<!-- CSS propio -->
+<link href="css/estilos.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <!-- ================================================
-       NAVBAR
-       ================================================ -->
-  <nav class="navbar navbar-expand-lg navbar-informe">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <i class="bi bi-circle-fill me-2" style="font-size:0.6rem; color: #E8612A;"></i>
-        Informe de Visita
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-informe">
+<div class="container">
+<a class="navbar-brand" href="#">
+<i class="bi bi-circle-fill me-2" style="font-size:0.6rem; color: #E8612A;"></i>
+        Informe
       </a>
-      <button class="navbar-toggler" type="button"
-              data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#ponente">Ponente</a></li>
-          <li class="nav-item"><a class="nav-link" href="#temas">Temas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="#reflexion">Reflexión</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- ================================================
-       HERO / PORTADA
-       ================================================ -->
-  <header class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7 fade-in">
-          <div class="hero-badge">
-            <i class="bi bi-mortarboard-fill me-1"></i> Informe Académico
+<button class="navbar-toggler" data-bs-target="#navMenu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#ponente">Ponente</a></li>
+<li class="nav-item"><a class="nav-link" href="#temas">Temas</a></li>
+<li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+<li class="nav-item"><a class="nav-link" href="#glosario">Glosario</a></li>
+<li class="nav-item"><a class="nav-link" href="#sst">SST</a></li>
+<li class="nav-item"><a class="nav-link" href="#reflexion">Reflexión</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- HERO -->
+<header class="hero">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-7 fade-in">
+<div class="hero-badge">
+<i class="bi bi-mortarboard-fill me-1"></i> Informe Académico
           </div>
-          <h1>
-            El Lenguaje <em>Infinito</em><br>del Color
-          </h1>
-          <p class="subtitulo">
+<h1>El Lenguaje <em>Infinito</em><br/>del Color</h1>
+<p class="subtitulo">
             Informe de visita a la conferencia de Sara Viloria sobre teoría del color,
             psicología cromática y moda. Un recorrido visual y conceptual por el poder
             que los colores ejercen sobre nuestra vida cotidiana.
           </p>
-          <div class="hero-meta">
-            <span><i class="bi bi-calendar3"></i> 27 de mayo de 2026</span>
-            <span><i class="bi bi-geo-alt"></i> Bogotá, Colombia</span>
-            <span><i class="bi bi-building"></i> Auditorio Institucional</span>
-          </div>
-        </div>
-        <div class="col-lg-5 d-none d-lg-flex justify-content-center mt-4 mt-lg-0 fade-in fade-delay-2">
-          <!-- Círculos de colores decorativos -->
-          <div style="position:relative; width:280px; height:280px;">
-            <div style="position:absolute; width:180px; height:180px; border-radius:50%;
-                        background: linear-gradient(135deg,#C9A84C,#E8612A);
-                        top:0; right:0; opacity:0.85;"></div>
-            <div style="position:absolute; width:140px; height:140px; border-radius:50%;
-                        background: linear-gradient(135deg,#5B2C8D,#2C1654);
-                        bottom:0; left:0; opacity:0.9; border: 3px solid rgba(255,255,255,0.2)"></div>
-            <div style="position:absolute; width:100px; height:100px; border-radius:50%;
-                        background: rgba(255,255,255,0.12); backdrop-filter:blur(8px);
-                        bottom:60px; right:50px; border: 1px solid rgba(255,255,255,0.25)"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  <!-- ================================================
-       INTRODUCCIÓN
-       ================================================ -->
-  <section class="seccion" id="intro">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="linea-decorativa"></div>
-          <h2 class="seccion-titulo">Introducción al Evento</h2>
-          <p class="seccion-subtitulo">Descripción general de la conferencia y su contexto</p>
-
-          <p class="mb-4">
+<div class="hero-meta">
+<span><i class="bi bi-calendar3"></i> 27 de mayo de 2026</span>
+<span><i class="bi bi-geo-alt"></i> Bogotá, Colombia</span>
+<span><i class="bi bi-building"></i> Auditorio Institucional - Universidad ECCI</span>
+</div>
+</div>
+<div class="col-lg-5 d-none d-lg-flex justify-content-center mt-4 mt-lg-0 fade-in fade-delay-2">
+<div class="hero-deco">
+<div class="hero-deco-circulo-grande"></div>
+<div class="hero-deco-circulo-medio"></div>
+<div class="hero-deco-circulo-chico"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- INTRODUCCIÓN -->
+<section class="seccion" id="intro">
+<div class="container">
+<div class="row">
+<div class="col-lg-8">
+<div class="linea-decorativa"></div>
+<h2 class="seccion-titulo">Introducción al Evento</h2>
+<p class="seccion-subtitulo">Descripción general de la conferencia</p>
+<p class="mb-4">
             El pasado <strong>27 de mayo de 2026</strong> se realizó en Bogotá una conferencia magistral
-            dictada por la reconocida colorista y artista visual chilena <strong>Sara Viloria</strong>.
-            El evento congregó a estudiantes, docentes y profesionales del diseño, la moda y las artes
-            visuales en un auditorio institucional decorado con flores y la bandera de la ciudad,
-            mostrando la importancia del encuentro.
+            dictada por la reconocida colorista y artista visual <strong>Sara Viloria</strong>.
+            El evento invito a aprendices, instructores y profesionales del diseño, la moda y las artes
+            visuales en un auditorio institucional de la Universidad ECCI decorado con flores.
           </p>
-          <p class="mb-4">
-            La conferencia giró en torno a una premisa poderosa: <em>los colores no son simples elementos
-            visuales, son un lenguaje universal</em> que comunica emociones, construye identidades y define
+<p class="mb-4">
+            En la conferencia se planto varios temas importantes como: <em>los colores que no son simples elementos
+            visuales, sino que son un lenguaje universal</em> que comunica emociones, construye identidades y define
             tendencias. A lo largo de la sesión, Sara combinó teoría académica, historia del arte,
             psicología y aplicaciones prácticas en moda y diseño.
           </p>
-          <p>
-            Como estudiante asistente, este informe recoge los principales conceptos abordados, las
+<p>
+            Como aprendiz asistente, este informe recoge los principales conceptos abordados, las
             dinámicas del evento y la reflexión personal sobre los aprendizajes obtenidos.
           </p>
-        </div>
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <!-- Card de datos del evento -->
-          <div class="card-reflexion">
-            <h3 class="mb-4"><i class="bi bi-info-circle me-2"></i>Datos del Evento</h3>
-
-            <div class="dato-evento">
-              <div class="dato-icono">📅</div>
-              <div>
-                <strong>Fecha</strong>
-                <span>27 de mayo de 2026</span>
-              </div>
-            </div>
-            <div class="dato-evento">
-              <div class="dato-icono">🎤</div>
-              <div>
-                <strong>Ponente</strong>
-                <span>Sara Viloria</span>
-              </div>
-            </div>
-            <div class="dato-evento">
-              <div class="dato-icono">🏛️</div>
-              <div>
-                <strong>Lugar</strong>
-                <span>Auditorio Institucional — Bogotá</span>
-              </div>
-            </div>
-            <div class="dato-evento">
-              <div class="dato-icono">🎨</div>
-              <div>
-                <strong>Tema central</strong>
-                <span>Teoría del Color, Moda y Psicología Cromática</span>
-              </div>
-            </div>
-            <div class="dato-evento">
-              <div class="dato-icono">👥</div>
-              <div>
-                <strong>Asistentes</strong>
-                <span>Estudiantes y profesionales del diseño</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================================================
-       PONENTE
-       ================================================ -->
-  <section class="seccion seccion-alt" id="ponente">
-    <div class="container">
-      <div class="linea-decorativa"></div>
-      <h2 class="seccion-titulo">Sobre la Ponente</h2>
-      <p class="seccion-subtitulo">Quién es Sara Viloria y por qué su voz en el mundo del color es única</p>
-
-      <div class="row align-items-start g-4">
-        <div class="col-md-4">
-          <div class="card-ponente">
-            <img src="img/IMG_20260527_112545_232.jpg" alt="Sara Viloria en el auditorio" />
-            <div class="card-ponente-body">
-              <div class="card-ponente-nombre">Sara Viloria</div>
-              <div class="card-ponente-cargo">Colorista Certificada · Artista Visual · Escritora</div>
-              <p style="font-size:0.88rem; color:#6B6B6B; margin-bottom:14px;">
+</div>
+<div class="col-lg-4 mt-4 mt-lg-0">
+<div class="card-reflexion">
+<h3 class="mb-4"><i class="bi bi-info-circle me-2"></i>Datos del Evento</h3>
+<div class="dato-evento">
+<div class="dato-icono">📅</div>
+<div><strong>Fecha</strong><span>27 de mayo de 2026</span></div>
+</div>
+<div class="dato-evento">
+<div class="dato-icono">🎤</div>
+<div><strong>Ponente</strong><span>Sara Viloria</span></div>
+</div>
+<div class="dato-evento">
+<div class="dato-icono">🏛️</div>
+<div><strong>Lugar</strong><span>Auditorio Institucional Universidad ECCI — Bogotá</span></div>
+</div>
+<div class="dato-evento">
+<div class="dato-icono">🎨</div>
+<div><strong>Tema central</strong><span>Teoría del Color, Moda y Psicología Cromática</span></div>
+</div>
+<div class="dato-evento">
+<div class="dato-icono">👥</div>
+<div><strong>Asistentes</strong><span>Aprendices, instructores y profesionales del diseño</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PONENTE -->
+<section class="seccion seccion-alt" id="ponente">
+<div class="container">
+<div class="linea-decorativa"></div>
+<h2 class="seccion-titulo">Sobre la Ponente</h2>
+<p class="seccion-subtitulo">Quién es Sara Viloria y por qué su voz en el mundo del color es única</p>
+<div class="row align-items-start g-4">
+<div class="col-md-4">
+<div class="card-ponente">
+<img alt="Sara Viloria en el auditorio" src="img/IMG_20260527_112545_232.jpg"/>
+<div class="card-ponente-body">
+<div class="card-ponente-nombre">Sara Viloria</div>
+<div class="card-ponente-cargo">Colorista Certificada · Artista Visual · Escritora</div>
+<p class="card-ponente-bio">
                 Nacida en 1991. Certificada por Leatrice Eiseman, Directora Ejecutiva del
-                Pantone Institute. Ganadora de la Beca Fundación Neruda (2021) y el premio
-                Lily Peter Fellowship (USA).
+                Pantone Institute. Ganadora de la Beca Fundación Neruda (2021).
               </p>
-              <div>
-                <span class="tag-ponente">Pantone</span>
-                <span class="tag-ponente">Fujifilm</span>
-                <span class="tag-ponente">Zeiss</span>
-                <span class="tag-ponente">Moda</span>
-                <span class="tag-ponente">Ilustración</span>
-                <span class="tag-ponente">Poesía</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-8">
-          <h4 class="mb-3" style="font-family: var(--fuente-titulo); color: var(--color-primario); font-size:1.3rem;">
-            Formación y Trayectoria
-          </h4>
-          <p class="mb-3">
+<div>
+<span class="tag-ponente">Pantone</span>
+<span class="tag-ponente">Fujifilm</span>
+<span class="tag-ponente">Moda</span>
+<span class="tag-ponente">Poesía</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<h4 class="ponente-subtitulo">Formación y Trayectoria</h4>
+<p class="mb-3">
             Sara Viloria es <strong>Licenciada en Artes Visuales</strong>, diplomada en Ilustración y Arte
             en su expresión territorial. Es la única colorista certificada directamente por
-            <strong>Leatrice Eiseman</strong>, Directora Ejecutiva del Pantone Institute, lo que la
-            posiciona como una referencia en América Latina para el uso profesional del color.
+            <strong>Leatrice Eiseman</strong>, Directora Ejecutiva del Pantone Institute.
           </p>
-          <p class="mb-3">
+<p class="mb-3">
             Ha desempeñado un rol destacado como <strong>Coordinadora de Educación del Museo de
-            Artes Visuales MAVI de Santiago</strong>, y como Mediadora Cultural para el Departamento
-            de Pueblos Originarios de Chile. También se desempeña como Curadora de Arte.
+            Artes Visuales MAVI de Santiago</strong>, También se desempeña como Curadora de Arte.
           </p>
-          <p class="mb-4">
+<p class="mb-4">
             Como creadora, es <strong>pintora, poeta y escritora</strong>. Ha publicado dos libros:
             <em>"Color y Acuarela: guía breve para un mundo infinito"</em> y
             <em>"Cartas para Siena"</em>, su primera obra de narrativa.
           </p>
-
-          <!-- Imagen de la diapositiva de biografía -->
-          <div style="border-radius:12px; overflow:hidden; box-shadow: 0 4px 20px rgba(44,22,84,0.15);">
-            <img src="img/IMG_20260527_112545_232.jpg"
-                 alt="Diapositiva biográfica de Sara Viloria"
-                 style="width:100%; display:block;" />
-          </div>
-
-          <div class="cita-destacada mt-4">
-            <blockquote>
-              "Vuelve a ver el mundo por primera vez."
-            </blockquote>
-            <p class="cita-autor">— Sara Viloria · Lema de su marca personal <em>saraviloria</em></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================================================
-       TEMAS TRATADOS
-       ================================================ -->
-  <section class="seccion" id="temas">
-    <div class="container">
-      <div class="linea-decorativa"></div>
-      <h2 class="seccion-titulo">Temas de la Conferencia</h2>
-      <p class="seccion-subtitulo">
-        Un recorrido por los bloques conceptuales que Sara Viloria desarrolló durante la jornada
-      </p>
-
-      <div class="row g-4">
-
-        <!-- Tema 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">🌈</div>
-            <h4>Psicología del Color</h4>
-            <p>
-              Los colores no son neutros: cada uno activa un "nodo neurológico" asociado a experiencias
-              aprendidas de la naturaleza y la cultura. El rojo, por ejemplo, conecta con Coca-Cola,
-              la sangre, el peligro y la pasión al mismo tiempo.
+<div class="ponente-foto-slide">
+<img alt="Diapositiva biográfica de Sara Viloria" src="img/IMG_20260527_112545_232.jpg"/>
+</div>
+<div class="cita-destacada mt-4">
+<blockquote>"Vuelve a ver el mundo por primera vez."</blockquote>
+<p class="cita-autor">— Sara Viloria · Lema de su marca personal <em>saraviloria</em></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TEMAS -->
+<section class="seccion" id="temas">
+<div class="container">
+<div class="linea-decorativa"></div>
+<h2 class="seccion-titulo">Temas de la Conferencia</h2>
+<p class="seccion-subtitulo">Un recorrido por los bloques conceptuales que Sara Viloria desarrolló durante la jornada</p>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🌈</div>
+<h4>Psicología del Color</h4>
+<p>Los colores no son neutros: cada uno activa un "nodo neurológico" asociado a experiencias aprendidas de la naturaleza y la cultura.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🎡</div>
+<h4>Círculo Cromático y Armonías</h4>
+<p>Se presentó el círculo de 24 colores y esquemas armónicos. La regla clave: <em>elige máximo 3 colores</em> para cualquier composición.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">💡</div>
+<h4>Temperatura del Color</h4>
+<p>Colores cálidos (amarillos, naranjas, rojos) versus fríos (azules, violetas). La naturaleza fue usada como referencia visual inmediata.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🔬</div>
+<h4>Saturación y Valor</h4>
+<p>La saturación (croma) indica la intensidad del color. Lo que "grita" es alta saturación; lo grisáceo es de baja saturación.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">⚡</div>
+<h4>Alto y Bajo Contraste</h4>
+<p>Bajo contraste: suavidad y armonía. Alto contraste: energía e impacto. Cada uno sirve propósitos comunicativos distintos.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">👗</div>
+<h4>Color en Moda y Naturaleza</h4>
+<p>Alas de mariposa, insectos y reptiles comparados con alta costura. Diseñadores como Alexander McQueen usan la fauna como paleta.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🧠</div>
+<h4>Intuición y Patrones Personales</h4>
+<p>Revisar tu armario y tu cuarto revela una paleta personal inconsciente. La intuición cromática se educa con observación.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">📚</div>
+<h4>Historia del Color</h4>
+<p>Werner y su "Nomenclatura del Color", uno de los primeros sistemas de clasificación usados por Darwin. El color como ciencia tiene siglos.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🏷️</div>
+<h4>Significado de los Colores por Marca</h4>
+<p>Rojo: poder (Coca-Cola). Naranja: creatividad (Fanta). Rosa: feminidad (Barbie). Verde: naturaleza (Spotify). Azul: confianza (Facebook).</p>
+</div>
+</div>
+</div>
+<div class="row mt-5">
+<div class="col-lg-10 mx-auto">
+<div class="cita-destacada">
+<blockquote>"Un color nunca está solo — siempre convive con otros. Por eso, antes de elegir, prueba tus paletas."</blockquote>
+<p class="cita-autor">— Sara Viloria, durante la conferencia (27/05/2026)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GALERÍA -->
+<section class="seccion" id="sst">
+<div class="container">
+<div class="linea-decorativa"></div>
+<h2 class="seccion-titulo">SST Aplicada a la Industria de la Moda</h2>
+<p class="seccion-subtitulo">Seguridad y Salud en el Trabajo: qué es, para qué sirve y cómo se aplica en el sector textil y de moda</p>
+<div class="row g-4 mb-5">
+<div class="col-lg-6">
+<div class="card-reflexion h-100">
+<h3><i class="bi bi-shield-check me-2"></i>¿Qué es la SST?</h3>
+<p class="mt-3">
+              La <strong>Seguridad y Salud en el Trabajo (SST)</strong> es la disciplina que se ocupa
+              de prevenir los accidentes laborales, las enfermedades profesionales y los riesgos
+              que puede enfrentar un trabajador en su entorno de trabajo.
             </p>
-          </div>
-        </div>
-
-        <!-- Tema 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">🎡</div>
-            <h4>Círculo Cromático y Armonías</h4>
-            <p>
-              Se presentó el círculo de 24 colores y distintos esquemas armónicos: colores análogos,
-              complementarios, triádicos. La regla clave: <em>elige máximo 3 colores</em> para
-              cualquier composición visual o de moda.
+<p class="mt-3">
+              En Colombia está regulada por la <strong>Ley 1562 de 2012</strong> y el
+              <strong>Decreto 1072 de 2015</strong>, que obligan a todas las empresas a implementar
+              un <em>Sistema de Gestión de SST (SG-SST)</em> para proteger la integridad física,
+              mental y social de sus colaboradores.
             </p>
-          </div>
-        </div>
-
-        <!-- Tema 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">💡</div>
-            <h4>Temperatura del Color</h4>
-            <p>
-              Colores cálidos (amarillos, naranjas, rojos) versus fríos (azules, violetas, ciertos verdes).
-              La naturaleza fue usada como referencia visual inmediata: un glaciar y un atardecer
-              frente a frente en una misma diapositiva.
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card-reflexion h-100">
+<h3><i class="bi bi-bullseye me-2"></i>¿Para qué sirve?</h3>
+<p class="mt-3">
+              La SST sirve para <strong>identificar, evaluar y controlar los riesgos</strong> presentes
+              en cada puesto de trabajo antes de que se conviertan en accidentes o enfermedades.
+              Protege tanto al trabajador como a la empresa.
             </p>
-          </div>
-        </div>
-
-        <!-- Tema 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">🔬</div>
-            <h4>Saturación y Valor</h4>
-            <p>
-              La saturación (también llamada croma) indica la intensidad del color desde un eje
-              central gris. Lo que "grita" es alta saturación; lo grisáceo o complejo de definir
-              es de baja saturación.
+<p class="mt-3">
+              Sus principales objetivos son: reducir el ausentismo laboral, cumplir con la normativa
+              vigente, mejorar el clima organizacional y garantizar condiciones de trabajo dignas,
+              seguras y saludables para todos los empleados.
             </p>
-          </div>
-        </div>
+</div>
+</div>
+</div>
+<div class="row g-4 mb-5">
+<div class="col-12">
+<div class="linea-decorativa"></div>
+<h3 class="sst-subtitulo">Riesgos laborales en la industria textil y de moda</h3>
+<p class="sst-subtitulo-sub">El sector de la moda presenta riesgos específicos que deben ser gestionados bajo el SG-SST</p>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">⚗️</div>
+<h4>Riesgo Químico</h4>
+<p>Exposición a tintes, solventes y fijadores en el teñido de telas. Los coloristas trabajan con pigmentos que pueden ser irritantes o tóxicos sin la protección adecuada (guantes, mascarilla, ventilación).</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🪑</div>
+<h4>Riesgo Ergonómico</h4>
+<p>Los diseñadores y costureros permanecen largas horas en posiciones fijas. Esto genera lesiones musculoesqueléticas. Se recomienda mobiliario ergonómico y pausas activas cada 2 horas.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">💡</div>
+<h4>Riesgo Visual / Iluminación</h4>
+<p>Trabajar con colores y matices finos requiere iluminación adecuada. La iluminación deficiente genera fatiga visual y errores en la percepción cromática, afectando la calidad del trabajo.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🔊</div>
+<h4>Riesgo Físico — Ruido</h4>
+<p>En talleres de confección, las máquinas de coser industriales superan los 85 dB. La exposición prolongada sin protección auditiva puede causar hipoacusia laboral.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🧠</div>
+<h4>Riesgo Psicosocial</h4>
+<p>La industria de la moda es reconocida por su alta presión laboral. El estrés crónico, el síndrome de burnout y la ansiedad son riesgos psicosociales frecuentes en este sector.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="card-tema">
+<div class="card-tema-icono">🔥</div>
+<h4>Riesgo de Incendio</h4>
+<p>Las telas e hilos son altamente inflamables. Los talleres deben contar con extintores, salidas de emergencia señalizadas y planes de evacuación actualizados.</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="sst-panel">
+<h3 class="sst-panel-titulo">
+<i class="bi bi-check2-circle me-2"></i>
+              Medidas de control y buenas prácticas SST en moda
+            </h3>
+<div class="row g-3">
+<div class="col-md-6">
+<div class="sst-medida">
+<span class="sst-medida-icono">🧤</span>
+<div>
+<strong>Uso de EPP</strong>
+<span>Guantes de nitrilo, mascarilla N95 y gafas de protección al manipular tintes y solventes.</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="sst-medida">
+<span class="sst-medida-icono">🏃</span>
+<div>
+<strong>Pausas activas</strong>
+<span>Ejercicios de estiramiento cada 2 horas para prevenir lesiones musculoesqueléticas en costureros y diseñadores.</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="sst-medida">
+<span class="sst-medida-icono">🪟</span>
+<div>
+<strong>Ventilación adecuada</strong>
+<span>Espacios con ventilación natural o extracción de aire en áreas donde se usen químicos y pinturas.</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="sst-medida">
+<span class="sst-medida-icono">📋</span>
+<div>
+<strong>Capacitación continua</strong>
+<span>Formación periódica en identificación de riesgos, manejo seguro de materiales y protocolos de emergencia.</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="sst-medida">
+<span class="sst-medida-icono">🌡️</span>
+<div>
+<strong>Control de iluminación</strong>
+<span>Iluminación entre 500 y 1000 lux en puestos de trabajo de color y confección, según norma NTC 5613.</span>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="sst-medida">
+<span class="sst-medida-icono">🆘</span>
+<div>
+<strong>Plan de emergencias</strong>
+<span>Rutas de evacuación señalizadas, brigadas de emergencia entrenadas y simulacros periódicos en talleres textiles.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="cita-destacada mt-4" style="margin-bottom:0;">
+<blockquote>"Un ambiente de trabajo seguro no es un lujo — es un derecho de cada trabajador y una responsabilidad de cada organización."</blockquote>
+<p class="cita-autor">— Principio del Sistema de Gestión SST · Decreto 1072 de 2015, Colombia</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="seccion seccion-oscura" id="galeria">
+<div class="container">
+<div class="linea-decorativa"></div>
+<h2 class="seccion-titulo">Galería del Evento</h2>
+<p class="seccion-subtitulo">Fotografías tomadas durante la conferencia</p>
+<div class="galeria-grid">
+<div class="galeria-item"><img alt="Auditorio lleno" loading="lazy" src="img/IMG_20260527_114134_257.jpg"/><div class="galeria-overlay"><span>Nomenclatura del color de Werner</span></div></div>
+<div class="galeria-item"><img alt="Sara Viloria en escena" loading="lazy" src="img/IMG_20260527_114406_875.jpg"/><div class="galeria-overlay"><span>Contraste y Complementarios</span></div></div>
+<div class="galeria-item"><img alt="Diapositiva Vuelve a ver el mundo" loading="lazy" src="img/IMG_20260527_114601_874.jpg"/><div class="galeria-overlay"><span>"Psicología del Color"</span></div></div>
+<div class="galeria-item"><img alt="Slide Pastel Pink" loading="lazy" src="img/IMG_20260527_114726_261.jpg"/><div class="galeria-overlay"><span>Experiencia vs Naturaleza — Tip de color</span></div></div>
+<div class="galeria-item"><img alt="Un color nunca es solo" loading="lazy" src="img/IMG_20260527_114951_714.jpg"/><div class="galeria-overlay"><span>"Inspiracion en la Naturaleza"</span></div></div>
+<div class="galeria-item"><img alt="Elige tus colores máximo 3" loading="lazy" src="img/IMG_20260527_115237_157.jpg"/><div class="galeria-overlay"><span>"Saturacion de colores"</span></div></div>
+<div class="galeria-item"><img alt="Círculo cromático completo" loading="lazy" src="img/IMG_20260527_115426_713.jpg"/><div class="galeria-overlay"><span>Colores calidos vs frios</span></div></div>
+<div class="galeria-item"><img alt="Crea a través del contraste" loading="lazy" src="img/IMG_20260527_115454_372.jpg"/><div class="galeria-overlay"><span>Intuicion hacia los colores</span></div></div>
+<div class="galeria-item"><img alt="Colores análogos y psicología" loading="lazy" src="img/IMG_20260527_115515_485.jpg"/><div class="galeria-overlay"><span>Patrones personales</span></div></div>
+<div class="galeria-item"><img alt="Revisa tus patrones personales" loading="lazy" src="img/IMG_20260527_120147_076.jpg"/><div class="galeria-overlay"><span>"Relacion entre colores"</span></div></div>
+<div class="galeria-item"><img alt="Saturación del color" loading="lazy" src="img/IMG_20260527_120309_440.jpg"/><div class="galeria-overlay"><span>Circulo cromático</span></div></div>
+<div class="galeria-item"><img alt="Intuición cromática" loading="lazy" src="img/IMG_20260527_120504_474.jpg"/><div class="galeria-overlay"><span>Seleccion de colores</span></div></div>
+<div class="galeria-item"><img alt="Temperatura cálidos y fríos" loading="lazy" src="img/IMG_20260527_120507_788.jpg"/><div class="galeria-overlay"><span>Contraste</span></div></div>
+<div class="galeria-item"><img alt="Naturaleza inspirando moda" loading="lazy" src="img/IMG_20260527_120516_040.jpg"/><div class="galeria-overlay"><span>Auditorio con la Ponente</span></div></div>
+<div class="galeria-item"><img alt="Insectos y alta costura" loading="lazy" src="img/IMG_20260527_120521_390.jpg"/><div class="galeria-overlay"><span>Paletas de colores</span></div></div>
+<div class="galeria-item"><img alt="Nodo rojo" loading="lazy" src="img/IMG_20260527_120614_600.jpg"/><div class="galeria-overlay"><span>La "Moda pastel pink"</span></div></div>
+<div class="galeria-item"><img alt="Psicología del color lámina" loading="lazy" src="img/IMG_20260527_120745_366.jpg"/><div class="galeria-overlay"><span>Lema personal</span></div></div>
+</div>
+</div>
+</section>
+<!-- GLOSARIO -->
+<section class="seccion seccion-alt" id="glosario">
+<div class="container">
+<div class="linea-decorativa"></div>
+<h2 class="seccion-titulo">Glosario de Términos</h2>
+<p class="seccion-subtitulo">15 palabras clave de la conferencia — español, inglés y su significado</p>
+<div class="table-responsive">
+<table class="glosario-tabla">
+<thead>
+<tr>
+<th style="width:5%;">#</th>
+<th style="width:22%;"><i class="bi bi-translate me-1"></i> Español</th>
+<th class="col-en" style="width:22%;"><i class="bi bi-globe me-1"></i> English</th>
+<th><i class="bi bi-journal-text me-1"></i> Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fila-clara">
+<td class="glosario-num">01</td>
+<td class="glosario-es">Tono</td>
+<td class="glosario-en">Hue</td>
+<td class="glosario-def">Atributo que diferencia un color de otro; lo que percibimos como "rojo", "azul" o "amarillo" en su forma pura.</td>
+</tr>
+<tr class="fila-oscura">
+<td class="glosario-num">02</td>
+<td class="glosario-es">Saturación</td>
+<td class="glosario-en">Saturation / Chroma</td>
+<td class="glosario-def">Intensidad o pureza de un color. Un color muy saturado "grita"; uno poco saturado se acerca al gris.</td>
+</tr>
+<tr class="fila-clara">
+<td class="glosario-num">03</td>
+<td class="glosario-es">Valor / Luminosidad</td>
+<td class="glosario-en">Value / Brightness</td>
+<td class="glosario-def">Claridad u oscuridad de un color. Determina si un tono es claro (alta luminosidad) u oscuro (baja luminosidad).</td>
+</tr>
+<tr class="fila-oscura">
+<td class="glosario-num">04</td>
+<td class="glosario-es">Contraste</td>
+<td class="glosario-en">Contrast</td>
+<td class="glosario-def">Diferencia visual entre dos colores o tonos. El alto contraste genera impacto; el bajo contraste transmite armonía y suavidad.</td>
+</tr>
+<tr class="fila-clara">
+<td class="glosario-num">05</td>
+<td class="glosario-es">Paleta cromática</td>
+<td class="glosario-en">Color palette</td>
+<td class="glosario-def">Selección de colores que se usan de forma coordinada en un diseño, marca o colección de moda.</td>
+</tr>
+<tr class="fila-oscura">
+<td class="glosario-num">06</td>
+<td class="glosario-es">Colores complementarios</td>
+<td class="glosario-en">Complementary colors</td>
+<td class="glosario-def">Colores opuestos en el círculo cromático (ej. azul y naranja). Juntos generan el máximo contraste visual.</td>
+</tr>
+<tr class="fila-clara">
+<td class="glosario-num">07</td>
+<td class="glosario-es">Colores análogos</td>
+<td class="glosario-en">Analogous colors</td>
+<td class="glosario-def">Colores adyacentes en el círculo cromático. Crean composiciones armónicas, tranquilas y visualmente cohesionadas.</td>
+</tr>
+<tr class="fila-oscura">
+<td class="glosario-num">08</td>
+<td class="glosario-es">Temperatura del color</td>
+<td class="glosario-en">Color temperature</td>
+<td class="glosario-def">Clasificación de los colores en cálidos (rojos, naranjas, amarillos) y fríos (azules, violetas, ciertos verdes).</td>
+</tr>
+<tr class="fila-clara">
+<td class="glosario-num">09</td>
+<td class="glosario-es">Psicología del color</td>
+<td class="glosario-en">Color psychology</td>
+<td class="glosario-def">Estudio de cómo los colores influyen en las emociones, percepciones y comportamientos de las personas.</td>
+</tr>
+<tr class="fila-oscura">
+<td class="glosario-num">10</td>
+<td class="glosario-es">Círculo cromático</td>
+<td class="glosario-en">Color wheel</td>
+<td class="glosario-def">Representación visual circular de los colores ordenados por sus relaciones armónicas. Base de toda teoría del color.</td>
+</tr>
+<tr class="fila-clara">
+<td class="glosario-num">11</td>
+<td class="glosario-es">Identidad visual</td>
+<td class="glosario-en">Visual identity</td>
+<td class="glosario-def">Conjunto de elementos gráficos —incluyendo colores— que representan y distinguen a una marca o persona.</td>
+</tr>
+<tr class="fila-oscura">
+<td class="glosario-num">12</td>
+<td class="glosario-es">Matiz</td>
+<td class="glosario-en">Tint</td>
+<td class="glosario-def">Variación de un color obtenida al añadirle blanco. Produce versiones más suaves y claras del color original.</td>
+</tr>
+<tr class="fila-clara">
+<td class="glosario-num">13</td>
+<td class="glosario-es">Sombra</td>
+<td class="glosario-en">Shade</td>
+<td class="glosario-def">Variación de un color al añadirle negro. Genera versiones más profundas y oscuras del tono base.</td>
+</tr>
+<tr class="fila-oscura">
+<td class="glosario-num">14</td>
+<td class="glosario-es">Armonía cromática</td>
+<td class="glosario-en">Color harmony</td>
+<td class="glosario-def">Combinación de colores que resulta agradable y equilibrada a la vista, siguiendo principios del círculo cromático.</td>
+</tr>
+<tr class="fila-clara">
+<td class="glosario-num">15</td>
+<td class="glosario-es">Colorimetría</td>
+<td class="glosario-en">Colorimetry</td>
+<td class="glosario-def">Ciencia que mide y cuantifica el color de forma objetiva, usada en diseño, moda, impresión y tecnología.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SST -->
 
-        <!-- Tema 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">⚡</div>
-            <h4>Alto y Bajo Contraste</h4>
-            <p>
-              Bajo contraste transmite suavidad, armonía e intimidad — ideal para marcas premium.
-              Alto contraste comunica energía, claridad y atención — ideal para impacto inmediato
-              en publicidad o moda urbana.
-            </p>
-          </div>
-        </div>
-
-        <!-- Tema 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">👗</div>
-            <h4>Color en Moda y Naturaleza</h4>
-            <p>
-              La naturaleza como inspiración infinita: alas de mariposa, insectos y reptiles fueron
-              comparados con vestidos de alta costura. Diseñadores como Alexander McQueen usan
-              la fauna como paleta directa.
-            </p>
-          </div>
-        </div>
-
-        <!-- Tema 7 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">🧠</div>
-            <h4>Intuición y Patrones Personales</h4>
-            <p>
-              El ejercicio de revisar tu armario, tu cuarto y tu café favorito revela una paleta
-              personal inconsciente. La intuición cromática se educa con observación y con
-              atreverse a probar nuevas paletas.
-            </p>
-          </div>
-        </div>
-
-        <!-- Tema 8 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">📚</div>
-            <h4>Historia del Color</h4>
-            <p>
-              Se mencionó a Werner y su "Nomenclatura del Color", uno de los primeros sistemas
-              de clasificación usados por Darwin. El color como ciencia tiene siglos de desarrollo
-              que hoy convergen con la moda y el diseño digital.
-            </p>
-          </div>
-        </div>
-
-        <!-- Tema 9 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card-tema">
-            <div class="card-tema-icono">🏷️</div>
-            <h4>Significado de los Colores por Marca</h4>
-            <p>
-              Rojo: poder y pasión (Coca-Cola, Nintendo). Naranja: creatividad (Fanta). Rosa: feminidad
-              (Barbie). Verde: naturaleza (Spotify). Azul: confianza (Facebook). Cada color
-              construye una identidad de marca específica.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Cita central de la conferencia -->
-      <div class="row mt-5">
-        <div class="col-lg-10 mx-auto">
-          <div class="cita-destacada">
-            <blockquote>
-              "Un color nunca está solo — siempre convive con otros. Por eso, antes de elegir,
-              prueba tus paletas."
-            </blockquote>
-            <p class="cita-autor">— Sara Viloria, durante la conferencia (27/05/2026)</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================================================
-       GALERÍA
-       ================================================ -->
-  <section class="seccion seccion-oscura" id="galeria">
-    <div class="container">
-      <div class="linea-decorativa"></div>
-      <h2 class="seccion-titulo">Galería del Evento</h2>
-      <p class="seccion-subtitulo">
-        Fotografías tomadas durante la conferencia — desde el auditorio hasta las diapositivas
-      </p>
-
-      <div class="galeria-grid">
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_114134_257.jpg" alt="Auditorio lleno" loading="lazy" />
-          <div class="galeria-overlay"><span>Vista general del auditorio</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_114406_875.jpg" alt="Sara Viloria en escena" loading="lazy" />
-          <div class="galeria-overlay"><span>Sara Viloria en la tarima</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_114601_874.jpg" alt="Diapositiva Vuelve a ver el mundo" loading="lazy" />
-          <div class="galeria-overlay"><span>"Vuelve a ver el mundo por primera vez"</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_114726_261.jpg" alt="Slide Pastel Pink" loading="lazy" />
-          <div class="galeria-overlay"><span>Pastel Pink #FFCSD3 — Tip de color</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_114951_714.jpg" alt="Un color nunca es solo" loading="lazy" />
-          <div class="galeria-overlay"><span>"Un color nunca es solo, prueba tus paletas"</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_115237_157.jpg" alt="Elige tus colores máximo 3" loading="lazy" />
-          <div class="galeria-overlay"><span>"Elige tus colores — máximo 3"</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_115426_713.jpg" alt="Círculo cromático completo" loading="lazy" />
-          <div class="galeria-overlay"><span>Círculo cromático de 24 colores</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_115454_372.jpg" alt="Crea a través del contraste" loading="lazy" />
-          <div class="galeria-overlay"><span>Alto y bajo contraste en composición</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_115515_485.jpg" alt="Colores análogos y psicología" loading="lazy" />
-          <div class="galeria-overlay"><span>Psicología por color y ejemplos de marcas</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120147_076.jpg" alt="Revisa tus patrones personales" loading="lazy" />
-          <div class="galeria-overlay"><span>"Revisa tus patrones personales"</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120309_440.jpg" alt="Saturación del color" loading="lazy" />
-          <div class="galeria-overlay"><span>Concepto de saturación (croma)</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120504_474.jpg" alt="Intuición cromática" loading="lazy" />
-          <div class="galeria-overlay"><span>INTUICIÓN — ¿qué colores elegimos y por qué?</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120507_788.jpg" alt="Temperatura del color - cálidos y fríos" loading="lazy" />
-          <div class="galeria-overlay"><span>Temperatura del color: cálidos y fríos</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120516_040.jpg" alt="Naturaleza inspirando moda" loading="lazy" />
-          <div class="galeria-overlay"><span>Naturaleza como fuente de paletas</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120521_390.jpg" alt="Insectos y alta costura" loading="lazy" />
-          <div class="galeria-overlay"><span>De la fauna a la alta costura</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120614_600.jpg" alt="Psicología del color - nodo rojo" loading="lazy" />
-          <div class="galeria-overlay"><span>El "Nodo Rojo" — memoria aprendida</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_120745_366.jpg" alt="Psicología del color lámina completa" loading="lazy" />
-          <div class="galeria-overlay"><span>Psicología del Color — todos los colores nos hacen sentir algo</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_121135_069.jpg" alt="Colores complementarios en arte" loading="lazy" />
-          <div class="galeria-overlay"><span>Colores complementarios — pintura clásica y pop art</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_121251_758.jpg" alt="Werner - Nomenclatura del Color" loading="lazy" />
-          <div class="galeria-overlay"><span>La Nomenclatura del Color de Werner</span></div>
-        </div>
-
-        <div class="galeria-item">
-          <img src="img/IMG_20260527_114134_257.jpg" alt="Público asistente" loading="lazy" />
-          <div class="galeria-overlay"><span>Público en el auditorio</span></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================================================
-       REFLEXIÓN Y CONCLUSIONES
-       ================================================ -->
-  <section class="seccion" id="reflexion">
-    <div class="container">
-      <div class="linea-decorativa"></div>
-      <h2 class="seccion-titulo">Reflexión Personal y Conclusiones</h2>
-      <p class="seccion-subtitulo">Aprendizajes obtenidos y su aplicación en mi formación</p>
-
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="card-reflexion h-100">
-            <h3><i class="bi bi-lightbulb me-2"></i>Lo más impactante</h3>
-            <p class="mt-3">
+<!-- REFLEXIÓN -->
+<section class="seccion" id="reflexion">
+<div class="container">
+<div class="linea-decorativa"></div>
+<h2 class="seccion-titulo">Opinión Personal y Conclusiones</h2>
+<p class="seccion-subtitulo">Aprendizajes obtenidos</p>
+<div class="row g-4">
+<div class="col-lg-6">
+<div class="card-reflexion h-100">
+<h3><i class="bi bi-lightbulb me-2"></i>Lo más impactante</h3>
+<p class="mt-3">
               La conferencia me mostró que el color no es un accidente estético, sino una
               <strong>herramienta de comunicación</strong>. Sara Viloria logró conectar la
               ciencia (teoría de Werner, el círculo de Itten), la psicología (nodos neuronales,
               emociones) y la cultura popular (branding, moda) en un solo relato coherente.
             </p>
-            <p class="mt-3">
+<p class="mt-3">
               El concepto del "nodo rojo" fue particularmente revelador: nuestra reacción ante
-              los colores no es instintiva — es aprendida y acumulada a lo largo de toda una vida
-              de experiencias.
+              los colores no es instintiva — es aprendida y acumulada a lo largo de toda una vida.
             </p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="card-reflexion h-100">
-            <h3><i class="bi bi-arrow-right-circle me-2"></i>Aplicaciones prácticas</h3>
-            <p class="mt-3">
-              Como estudiante de áreas tecnológicas y creativas, entender la psicología del color
-              es directamente aplicable al <strong>diseño de interfaces</strong>, presentaciones,
-              branding de proyectos y comunicación visual.
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card-reflexion h-100">
+<h3><i class="bi bi-arrow-right-circle me-2"></i>Aplicaciones prácticas</h3>
+<p class="mt-3">
+              Como aprendiz de <strong>Análisis y Desarrollo de Software</strong>, comprender la psicología
+              del color abre una dimensión que va más allá del código: el color define cómo un usuario
+              <em>siente</em> una interfaz antes de leer una sola palabra. Principios como la temperatura
+              cromática, el contraste y las armonías son herramientas directas para diseñar
+              <strong>UI/UX más intuitivas, accesibles y memorables</strong>.
             </p>
-            <p class="mt-3">
-              La regla de "máximo 3 colores" y la importancia de probar paletas antes de decidir
-              son principios que puedo implementar de inmediato en cualquier proyecto visual o de
-              diseño que desarrolle.
+<p class="mt-3">
+              La regla de "máximo 3 colores" y la construcción consciente de paletas son criterios que
+              puedo aplicar desde ya en el desarrollo de aplicaciones web, dashboards y prototipos,
+              donde cada decisión visual impacta directamente la experiencia del usuario final.
             </p>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div style="background: white; border-radius: 12px; padding: 36px; box-shadow: 0 4px 24px rgba(44,22,84,0.10);">
-            <h4 class="mb-3" style="font-family: var(--fuente-titulo); color: var(--color-primario);">
-              Conclusión General
-            </h4>
-            <p class="mb-3">
-              La visita a la conferencia de Sara Viloria fue una experiencia de aprendizaje que
-              va más allá del aula. Comprender que <em>todos los colores, sin excepción, nos hacen
+</div>
+</div>
+<div class="col-12">
+<div class="reflexion-panel">
+<h4>Conclusión General</h4>
+<p class="mb-3">
+              La visita a la conferencia de Sara Viloria fue una experiencia de aprendizaje maravillosa. Comprender que <em>todos los colores, sin excepción, nos hacen
               sentir algo</em>, y que esa reacción tiene raíces tanto biológicas como culturales,
               cambia la forma en que uno observa el mundo cotidiano.
             </p>
-            <p>
+<p>
               Sara demostró con pasión y rigor que el color es una disciplina seria, con historia,
               ciencia y aplicaciones ilimitadas. Su invitación a "volver a ver el mundo por primera
-              vez" es una metáfora de la mirada creativa que todo profesional del diseño, la tecnología
-              o las artes debería cultivar permanentemente.
+              vez" es una metáfora de la mirada creativa que todo profesional debería cultivar.
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================================================
-       FOOTER
-       ================================================ -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <p class="footer-titulo">Informe de Visita Cultural</p>
-          <p style="font-size:0.88rem; max-width:380px;">
-            Documento académico elaborado a partir de la asistencia a la conferencia de
-            Sara Viloria sobre el color, celebrada en Bogotá en mayo de 2026.
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-6 mb-4 mb-md-0">
+<p class="footer-titulo">Informe de Visita</p>
+<p style="font-size:0.88rem; max-width:380px;">
+            Sitio WEB elaborado a partir de la asistencia a la conferencia de
+            Sara Viloria sobre el color y la moda, celebrada en Bogotá en mayo de 2026.
           </p>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <p class="footer-titulo">Referencia</p>
-          <p style="font-size:0.88rem;">
-            Ponente: Sara Viloria — <em>saraviloria</em><br>
+</div>
+<div class="col-md-6 text-md-end">
+<p class="footer-titulo">Referencia</p>
+<p style="font-size:0.88rem;">
+            Ponente: Sara Viloria — <em>saraviloria</em><br/>
             Certificada Pantone Institute · Fujifilm · Zeiss
           </p>
-        </div>
-      </div>
-      <hr />
-      <p class="footer-copy text-center">
+</div>
+<div class="col-md-6 text-md-end">
+<p class="footer-titulo">Creditos</p>
+<p style="font-size:0.88rem;">
+            Autor: Eison Stiven Ramirez Vasquez<br/>
+            Ficha: 3171084<br/>
+            Programa: Análisis y Desarrollo de Software - ADSO
+          </p>
+</div>
+</div>
+<hr/>
+<p class="footer-copy text-center">
         Informe elaborado con fines académicos · Imágenes tomadas en el evento · 2026
       </p>
-    </div>
-  </footer>
-
-
-  <!-- Bootstrap 5.3 JS Bundle (incluye Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script de animación al hacer scroll (opcional, sin librerías externas) -->
-  <script>
-    // Efecto de aparición suave al entrar en viewport
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.card-tema, .card-reflexion, .galeria-item').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(el);
-    });
-  </script>
-
+</div>
+</footer>
+<!-- Bootstrap 5.3 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script propio -->
+<script src="js/scripts.js"></script>
 </body>
 </html>
